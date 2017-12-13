@@ -18,7 +18,7 @@ public class touristrepository {
 	
 	public void save(String username, String fname, String lname, String email, String country_of_origin, String password) {
 		try {
-			PreparedStatement prepStatement = dbConnection.prepareStatement("insert into student(username, fname, lname, email, country_of_origin, password) values (?, ?, ?, ?, ?, ?)");
+			PreparedStatement prepStatement = dbConnection.prepareStatement("insert into tourist(username, fname, lname, email, country_of_origin, password) values (?, ?, ?, ?, ?, ?)");
 			prepStatement.setString(1, username);
 			prepStatement.setString(2, fname);
 			prepStatement.setString(3, lname);
@@ -34,7 +34,7 @@ public class touristrepository {
 	
 	public boolean findByUserName(String username) {
 		try {
-			PreparedStatement prepStatement = dbConnection.prepareStatement("select count(*) from student where username = ?");
+			PreparedStatement prepStatement = dbConnection.prepareStatement("select count(*) from tourist where username = ?");
 			prepStatement.setString(1, username);	
 						
 			ResultSet result = prepStatement.executeQuery();
@@ -53,7 +53,7 @@ public class touristrepository {
 	
 	public boolean findByLogin(String username, String password) {
 		try {
-			PreparedStatement prepStatement = dbConnection.prepareStatement("select password from student where username = ?");
+			PreparedStatement prepStatement = dbConnection.prepareStatement("select password from tourist where username = ?");
 			prepStatement.setString(1, username);			
 			
 			ResultSet result = prepStatement.executeQuery();

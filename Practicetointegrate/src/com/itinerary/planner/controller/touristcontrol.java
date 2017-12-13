@@ -18,7 +18,7 @@ import com.itinerary.planner.repository.touristrepository;
 public class touristcontrol extends HttpServlet {
 	private touristrepository touristrepository;
 
-	private static String STUDENT_SIGNUP = "CreateNewaccount.jsp";
+	private static String STUDENT_SIGNUP = "content/CreateNewaccount.jsp";
 	private static String STUDENT_LOGIN = "In.jsp";
 	/*private static String LOGIN_SUCCESS = "content/success.jsp";
 	private static String LOGIN_FAILURE = "content/failure.jsp";*/

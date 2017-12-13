@@ -14,6 +14,7 @@
 	<h2> Let us in on your trip <small> and lets plan it together !</small></h2>
   <img src="https://i.pinimg.com/736x/18/22/ef/1822ef5afa9aca17beb423ca686a91da--travel-agency-logo-travel-logo.jpg" height="50" width="50">
   <form method="post" action="../createaccount">
+  <input type="hidden" name="pageName" value="CreateNewaccount">
   		Username <br>
   		<input type="text" class="form-control" id="uname" placeholder="Choose a username">
   		First name <br>
