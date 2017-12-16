@@ -1,0 +1,13 @@
+127.0.0.1 - - [14/Dec/2017:00:01:20 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [14/Dec/2017:00:01:22 +0530] "GET /Practicetointegrate/content/CreateNewaccount.jsp HTTP/1.1" 200 1729
+0:0:0:0:0:0:0:1 - - [14/Dec/2017:00:01:28 +0530] "POST /Practicetointegrate/createaccount HTTP/1.1" 500 1537
+0:0:0:0:0:0:0:1 - - [14/Dec/2017:00:01:39 +0530] "GET /Practicetointegrate/content/CreateNewaccount.jsp HTTP/1.1" 200 1729
+0:0:0:0:0:0:0:1 - - [14/Dec/2017:00:02:02 +0530] "POST /Practicetointegrate/createaccount HTTP/1.1" 500 1537
+0:0:0:0:0:0:0:1 - - [14/Dec/2017:00:02:47 +0530] "POST /Practicetointegrate/createaccount HTTP/1.1" 500 1537
+127.0.0.1 - - [14/Dec/2017:18:43:58 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [14/Dec/2017:18:44:00 +0530] "GET /Practicetointegrate/content/CreateNewaccount.jsp HTTP/1.1" 200 1729
+0:0:0:0:0:0:0:1 - - [14/Dec/2017:18:44:09 +0530] "POST /Practicetointegrate/createaccount HTTP/1.1" 500 1537
+0:0:0:0:0:0:0:1 - - [14/Dec/2017:18:56:19 +0530] "GET /Practicetointegrate/content/CreateNewaccount.jsp HTTP/1.1" 200 1729
+0:0:0:0:0:0:0:1 - - [14/Dec/2017:18:56:21 +0530] "POST /Practicetointegrate/createaccount HTTP/1.1" 500 1537
+0:0:0:0:0:0:0:1 - - [14/Dec/2017:19:02:08 +0530] "GET /Practicetointegrate/content/CreateNewaccount.jsp HTTP/1.1" 200 1729
+0:0:0:0:0:0:0:1 - - [14/Dec/2017:19:02:32 +0530] "POST /Practicetointegrate/createaccount HTTP/1.1" 500 1537

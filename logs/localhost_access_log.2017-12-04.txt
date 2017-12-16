@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [04/Dec/2017:00:06:57 +0530] "GET /Practicetointegrate/In.jsp HTTP/1.1" 200 1229
+0:0:0:0:0:0:0:1 - - [04/Dec/2017:00:07:05 +0530] "GET /Practicetointegrate/CreateNewaccount.jsp HTTP/1.1" 200 1939
