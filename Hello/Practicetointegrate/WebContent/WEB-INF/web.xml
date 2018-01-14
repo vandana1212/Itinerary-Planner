@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Practicetointegrate</display-name>
+  <welcome-file-list>
+    <welcome-file>homepage.jsp</welcome-file>
+    
+  </welcome-file-list>
+  <servlet>
+      <servlet-name>TouristServlet</servlet-name>
+      <servlet-class>com.itinerary.planner.controller.touristcontrol</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>TravelPlanServlet</servlet-name>
+  	<servlet-class>com.itinerary.planner.controller.travelplancontrol</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>MorePlanServlet</servlet-name>
+  	<servlet-class>com.itinerary.planner.controller.moreplancontrol</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>TravelLogServlet</servlet-name>
+  	<servlet-class>com.itinerary.planner.controller.logcontrol</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>TouristServlet</servlet-name>
+      <url-pattern>/createaccount</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TravelLogServlet</servlet-name>
+  	<url-pattern>/travellog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TravelPlanServlet</servlet-name>
+  	<url-pattern>/travelplan</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>MorePlanServlet</servlet-name>
+  	<url-pattern>/moreplan</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
