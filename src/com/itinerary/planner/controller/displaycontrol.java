@@ -1,6 +1,8 @@
 package com.itinerary.planner.controller;
 
 import java.io.IOException;
+import com.itinerary.planner.model.*;
+import java.util.*;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -61,7 +63,15 @@ public class displaycontrol extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		
-
+		ArrayList<listing> arr;
+	 	arr = request.
+	   if (arr != null) 
+	   {
+	      for (int i = 0; i < arr.length; i++) 
+	      {
+	         System.out.println (arr[i].description);
+	      }
+	   }
 		String forward = DISPLAY;
 		RequestDispatcher view = request.getRequestDispatcher(forward);
 		view.forward(request, response);

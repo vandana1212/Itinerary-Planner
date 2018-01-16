@@ -13,9 +13,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
   <style>
-  body
-  {
-  padding-top:75px;
+  body {
+  
+  background-image: url("https://www.artsfon.com/pic/201408/1920x1200/artsfon.com-6026.jpg");
+  background-size:cover;
+  /* background-image: url("http://hdqwalls.com/wallpapers/taj-mahal-river-wide.jpg");*/
+  background-repeat:no-repeat;
+  padding-top:220px;
+  padding-left:300px;
   font: 400 15px/1.8 Lato, sans-serif;
   }
   </style>
@@ -24,14 +29,16 @@
 <body>
 <input type="hidden" name="pageName" value="success">
 <div class="container text center">
-<h1> Successfully logged in !</h1>
-<br><br>
+<h1> <strong>Successfully logged in !</strong></h1>
+<br>
 <a href="content/TravelPlan.jsp" class="btn btn-success btn-lg" role="button">Create new plan</a>
 <br><br>
 <div class="container">
+<div class="row">
 <a href="<%=request.getContextPath()%>/travellog" class="btn btn-primary btn-lg" role="button">View Previous Travels!</a>
 </div>
-<br><br>
+</div>
+<br>
 <a href="homepage.jsp" class="btn btn-warning btn-lg" role="button">Back to homepage</a>
 </div>
 </body>

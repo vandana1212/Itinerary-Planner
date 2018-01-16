@@ -28,6 +28,7 @@ body
 
 <%try
 {
+	//Hello
 		 final Connection dbConnection=DbUtil.getConnection();
 	 	String[] arr;
 	 	arr = request.getParameterValues("selected");

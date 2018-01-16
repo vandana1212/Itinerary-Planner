@@ -16,20 +16,27 @@
 <style>
 body
 {
+background-image:url("http://cdn.pcwallart.com/images/light-green-backgrounds-wallpaper-4.jpg");
+background-repeat:no-repeat;
+background-size:cover;
  font-family:Lato;
   padding-top : 50px;
-  padding-left: 50px;
+  padding-left: 30px;
 }
 </style>
 </head>
 <body>
-<h4>Keeping your distance and the allocated hours in consideration, we would recommend the following activities to you. Please select the activities/food items that interest you.</h4>		
 <div class="container">
-  <h2><strong>Leisure Activities Recommended</strong></h2>            
-  <form method="post" action="content/Display.jsp">
+<h1><strong>Recommendations !</strong></h1><br>
+<h4>Keeping your distance and the allocated hours in consideration, we would recommend the following activities and food items to you. Please select the ones that interest you.</h4>		
+<br>
+  <h2><strong>Leisure Activities Recommended</strong></h2>
+  <br>            
+  <form method="post" action="<%=request.getContextPath()%>/display">
   <table class="table table-striped">
     <thead>
       <tr>
+      	<th></th>
         <th>Description</th>
         <th>Expense (likely to incur)</th>
       </tr>
@@ -38,10 +45,10 @@ body
     	
       <c:forEach items="${listing[0]}" var="listing">
                     <tr>
-                    	<td align="left"><input type="text" name="description<c:out value="${listing.description}"/>"  disabled="true"/></td>                     
-                     	<td align="left"><input type="text" name="title<c:out value="${listing.expense}"/>"  disabled="true"/></td> 
-                     	<td align="center">  
-                        <input type="checkbox" name="checkboxgroup"/>  
+                    	<td><input type="checkbox" name="selected" value="${listing}"></td>
+                    	<td><input type="text" name="description" value="${listing.description}"></td>                 
+                    	<td><input type="text" name="expense" value="${listing.expense}"></td>    
+       
                     </tr>
                 </c:forEach>
 

@@ -16,17 +16,23 @@
 <style>
 body
 {
- font-family:Lato;
-  padding-top : 50px;
-  padding-left: 50px;
+padding-top:80px;
+padding-left:30px;
+background-image:url("http://www.fonstola.ru/large/201202/75289.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+  font: 400 15px/1.8 Lato, sans-serif;
 }
+
 </style>
 </head>
 <body>
-<<input type="hidden" name="pageName" value="PreviousTravel">		
+<input type="hidden" name="pageName" value="PreviousTravel">		
+<div class="bg"></div>
 <div class="container">
-  <h2><strong>Your Previous Travels</strong></h2>            
-  <table class="table table-striped">
+  <h2><strong>Your Previous Travels</strong></h2>
+  <br>            
+  <table class="table">
     <thead>
       <tr>
         <th>City name</th>
