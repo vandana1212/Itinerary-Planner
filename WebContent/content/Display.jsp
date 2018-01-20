@@ -4,6 +4,7 @@
 <%@ page import="com.itinerary.planner.util.DbUtil" %>
 <%@ page import="java.sql.PreparedStatement" %>   
 <%@ page import="java.sql.ResultSet" %>       
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -18,32 +19,99 @@
 <style>
 body
 {
+
  font-family:Lato;
   padding-top : 50px;
   padding-left: 50px;
+}
+input[readonly=true]
+{
+    background: transparent;
+    border: none;
+}
+input:focus{
+  outline: none;
 }
 </style>
 </head>
 <body>
 
-<%try
-{
-	//Hello
-		 final Connection dbConnection=DbUtil.getConnection();
-	 	String[] arr;
-	 	arr = request.getParameterValues("selected");
-	   if (arr != null) 
-	   {
-	      for (int i = 0; i < arr.length; i++) 
-	      {
-	         out.println ("<b>"+arr[i]+"<b>");
-	      }
-	   }
-	
-	
-}catch (Exception e) {
-	e.printStackTrace();
-}
-%>
-</body>
+<div class="container">    
+<br>
+<form method="get" action="<%=request.getContextPath()%>/display">
+  <c:if test="${fn:length(selected_listing[0]) gt 0}">
+  <h2><strong>Leisure Activities Selected</strong></h2>
+  <br>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+          
+        <th>Description</th>
+        <th>Expense (likely to incur)</th>
+      </tr>
+    </thead>
+    <tbody>
+        
+      <c:forEach items="${selected_listing[0]}" var="listing">
+           <tr>
+               <td><input name="description" value="${listing.description}" readonly=true></td>                 
+               <td><input name="expense" value="${listing.expense}" readonly=true></td>    
+           </tr>
+       </c:forEach>
+
+    </tbody>
+    </table>
+    </c:if>
+    <c:if test="${!(fn:length(selected_listing[0]) gt 0)}">
+     <p>No leisure activities selected</p>
+    </c:if>
+    <h2><strong>Sightseeing Activities Selected</strong></h2>   
+    <c:if test="${fn:length(selected_listing[1]) gt 0}">         
+         
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        
+        <th>Description</th>
+        <th>Expense (likely to incur)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <c:forEach items="${selected_listing[1]}" var="sightseeing">
+         <tr>
+               <td><input name="sightseeing_description" value="${sightseeing.description}" readonly=true></td>                 
+               <td><input name="sightseeing_expense" value="${sightseeing.expense}" readonly=true></td>    
+         </tr>
+     </c:forEach>
+    </tbody>
+  </table>
+    </c:if>
+  <c:if test="${!(fn:length(selected_listing[1]) gt 0)}">
+     <p>No sightseeing activities selected</p>
+    </c:if>
+    <h2><strong>Food Selected</strong></h2>       
+  <c:if test="${fn:length(selected_listing[2]) gt 0}">  
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <c:forEach items="${selected_listing[2]}" var="food">
+          <tr>
+               <td><input name="food_description" value="${food.description}" readonly=true></td>          
+          </tr>
+      </c:forEach>
+    </tbody>
+    </table>
+    </c:if>
+    <c:if test="${!(fn:length(selected_listing[2]) gt 0)}">
+     <p>No food items selected</p>
+    </c:if>
+    <input type="submit" class="btn btn-success btn-lg pull-right" value="OK">
+    </form>
+ </div>
+ </body>
 </html>
