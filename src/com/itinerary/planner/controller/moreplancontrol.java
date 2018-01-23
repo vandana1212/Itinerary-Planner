@@ -53,7 +53,7 @@ public class moreplancontrol extends HttpServlet {
 			if (pageName.equals("MorePlan")) {
 						request.setAttribute("listing", moreplanrepository.recommender(request.getParameter("leisure"),
 								request.getParameter("sightseeing"),
-								request.getParameter("distance"),(String)request.getSession().getAttribute("cityname")));
+								(String)request.getSession().getAttribute("cityname")));
 				forward = LISTING;
 			} 
 		

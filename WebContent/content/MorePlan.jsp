@@ -45,13 +45,6 @@
 	<input type="text" class="form-control" id="sightseeing" name="sightseeing" placeholder="Enter number of hours for active sightseeing">
 	</div>
 	</div>
-	<br>
-	<div class="row">
-	<div class="col-xs-8">
-	<h4>Preferred distance you are comfortable in travelling from hotel location</h4>
-	<input type="text" class="form-control" id="distance" name="distance" placeholder="Enter distance you are comfortable travelling (in km)">
-	</div>
-	</div>
 	<br><br>
 	<input type="submit" class="btn btn-success btn-lg" value="Submit !">
 	

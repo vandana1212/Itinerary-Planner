@@ -15,7 +15,7 @@ public class moreplanrepository {
 		dbConnection = DbUtil.getConnection();
 	}
 
-	public ArrayList< ArrayList<listing> > recommender(String leisure, String sightseeing, String distance,String cityname) {
+	public ArrayList< ArrayList<listing> > recommender(String leisure, String sightseeing, String cityname) {
 		ArrayList< ArrayList<listing> >finalans=new ArrayList< ArrayList<listing> >();
 		ArrayList<listing> final_list=new ArrayList<listing>();
 		ArrayList<listing> final_list1=new ArrayList<listing>();

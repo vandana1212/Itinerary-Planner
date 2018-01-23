@@ -19,10 +19,11 @@
 <style>
 body
 {
-
+background-image:url("/content/pink-wallpaper.jpg");
  font-family:Lato;
   padding-top : 50px;
   padding-left: 50px;
+  padding-bottom:100px;
 }
 input[readonly=true]
 {

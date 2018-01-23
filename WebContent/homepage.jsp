@@ -111,13 +111,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="content/Login.jsp">Login</a></li>
-        <li><a href="content/CreateNewaccount.jsp">Sign Up</a></li>
-        <li><a href="#tour">About Us</a></li>
+        <li><a href="content/Login.jsp"><h5>Login</h5></a></li>
+        <li><a href="content/CreateNewaccount.jsp"><h5>Sign Up</h5></a></li>
+        <li><a href="content/Aboutus.jsp"><h5>About Us</h5></a></li>
       </ul>
     </div>
   </div>

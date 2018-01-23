@@ -14,14 +14,12 @@
   
   <style>
   body {
-  
-  background-image: url("https://www.artsfon.com/pic/201408/1920x1200/artsfon.com-6026.jpg");
+  padding-top:50px;
+  padding-left:20px;
   background-size:cover;
-  /* background-image: url("http://hdqwalls.com/wallpapers/taj-mahal-river-wide.jpg");*/
+  background-image: url("https://hdqwalls.com/download/taj-mahal-river-wide-2048x1152.jpg");
   background-repeat:no-repeat;
-  padding-top:220px;
-  padding-left:300px;
-  font: 400 15px/1.8 Lato, sans-serif;
+   font: 400 15px/1.8 Lato, sans-serif;
   }
   </style>
   
