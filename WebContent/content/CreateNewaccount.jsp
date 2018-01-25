@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <style>
   body{
-  background-image:url("https://seoimgak.mmtcdn.com/blog/sites/default/files/11-Things-to-Expect-as-an-Indian-Woman-Travelling.jpg");
+  background-image:url("../images/createnewaccount.jpg");
   background-repeat:no-repeat;
   font-family:Lato;
   padding-top : 50px;

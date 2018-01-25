@@ -10,7 +10,7 @@
   <style>
   body
   {
-  background-image:url("http://allpicts.in/download/7642/Airplane_Images_with_Beautiful_Picture_of_Flight_in_Sunset.jpg/");
+  background-image:url("../images/travelplan.jpg");
   background-size:cover;
   background-repeat:no-repeat;
   font-family:Lato;

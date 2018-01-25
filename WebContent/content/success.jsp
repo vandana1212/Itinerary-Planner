@@ -17,7 +17,7 @@
   padding-top:50px;
   padding-left:20px;
   background-size:cover;
-  background-image: url("https://hdqwalls.com/download/taj-mahal-river-wide-2048x1152.jpg");
+  background-image: url("<%=request.getContextPath()%>/images/taj.jpg");;
   background-repeat:no-repeat;
    font: 400 15px/1.8 Lato, sans-serif;
   }

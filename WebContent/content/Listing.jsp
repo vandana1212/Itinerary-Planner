@@ -17,7 +17,7 @@
 <style>
 body
 {
-background-image:url("http://cdn.pcwallart.com/images/light-green-backgrounds-wallpaper-4.jpg");
+background-image:url("<%=request.getContextPath()%>/images/listing.jpg");
 background-repeat:no-repeat;
 background-size:cover;
  font-family:Lato;
@@ -33,6 +33,12 @@ input[readonly=true]
 input:focus{
   outline: none;
 }
+input.break
+{
+word-wrap:break-word;
+word-break:break-all;
+height:80px;
+}
 </style>
 </head>
 <body>
@@ -43,7 +49,8 @@ input:focus{
   <form method="post" action="<%=request.getContextPath()%>/display">
   <h2><strong>Leisure Activities Recommended</strong></h2>
   <c:if test="${fn:length(listing[0]) gt 0}">
-  <table class="table table-striped">
+  
+  <table class="table table-responsive table-striped">
     <thead>
       <tr>
       	<th></th>
@@ -56,8 +63,8 @@ input:focus{
       <c:forEach items="${listing[0]}" var="listing" varStatus="status">
                     <tr>
                     	 <td><input type="checkbox" id ="check${status.index}" name="selected" value="<c:out value="${status.index}"/>"></td>
-               			 <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;"><input name="description${status.index}" value="${listing.description}" readonly=true></td>                 
-                         <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;"><input name="expense${status.index}" value="${listing.expense}" readonly=true></td>        
+               			 <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;"><input name="description${status.index}" value="${listing.description}" readonly=true wrap="soft"></td>                 
+                         <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;"><input name="expense${status.index}" value="${listing.expense}" readonly=true wrap="soft"></td>        
        
                     </tr>
                 </c:forEach>

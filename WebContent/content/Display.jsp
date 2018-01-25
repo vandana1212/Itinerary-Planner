@@ -19,7 +19,8 @@
 <style>
 body
 {
-background-image:url("/content/pink-wallpaper.jpg");
+background-image:url("<%=request.getContextPath()%>/images/display2.png");
+background-size:cover;
  font-family:Lato;
   padding-top : 50px;
   padding-left: 50px;

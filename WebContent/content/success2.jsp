@@ -12,7 +12,7 @@
   <style>
   body
   {
-  background-image:url("https://assets.about.me/background/jonesmichael_1349868867_07.jpg");
+  background-image:url("<%=request.getContextPath()%>/images/success2.jpg");
   background-size:cover;
   background-repeat:no-repeat;
   font-family:Lato;

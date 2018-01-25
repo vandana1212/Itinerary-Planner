@@ -18,7 +18,7 @@ body
 {
 padding-top:80px;
 padding-left:30px;
-background-image:url("http://www.fonstola.ru/large/201202/75289.jpg");
+background-image:url("<%=request.getContextPath()%>/images/previous.jpg");
 background-size:cover;
 background-repeat:no-repeat;
   font: 400 15px/1.8 Lato, sans-serif;

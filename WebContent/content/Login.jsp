@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <style>
   body{
-  background-image: url("https://wallpaperscraft.com/image/guy_mountains_travel_27349_1920x1200.jpg");
+  background-image: url("../images/login.jpg");
   background-repeat:no-repeat;
   font-family:Lato;
   padding-top : 50px;

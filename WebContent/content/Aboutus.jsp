@@ -12,7 +12,7 @@
   <style>
   body
   {
-  background-image:url("https://img.huffingtonpost.com/asset/57f73f6e1a000004055b7a87.jpeg?ops=crop_0_6_4304_2781,scalefit_720_noupscale");
+  background-image:url("../images/aboutus.jpeg");
   background-size:cover;
   background-repeat:no-repeat;
   font-family:Lato;
@@ -23,7 +23,7 @@
 </head>
 <body>
 <h1><strong><center>About Us ...</center></strong></h1>
-<br>
+
 <h3>We know that travelling to a new place with a limited and a definite time period can be a little strenuous </h3><br><h4> " What should I do ? "<br>"Which popular food items and delicacies I must have ? "<br>"Which activities must be a part of my schedule ? "<br> <br></h4>
 <h4><strong>Now, we can help you plan out your perfect trip to the land of abundant natural beauty, India, in 4 of its most visited cities - Delhi, Mumbai, Kolkata & Chennai</strong></h4>
 <br><br><br>

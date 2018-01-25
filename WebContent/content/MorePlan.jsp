@@ -10,12 +10,14 @@
   <style>
    body
   {
-  background-image:url("https://cdn1.epicgames.com/ue/item/MountainVistas_Screenshot_02-1920x1080-20490aa28beee04a338c228219f6f9aa.png");
+  background-image:url("<%=request.getContextPath()%>/images/moreplan.png");
   background-size:cover;
   background-repeat:no-repeat;
   font-family:Lato;
   padding-top : 50px;
-  
+  padding-left:50px;
+  background-size:cover;
+  background-repeat:no-repeat;
   }
   </style>
 </head>
