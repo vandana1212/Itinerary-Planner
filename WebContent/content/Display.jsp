@@ -30,6 +30,8 @@ input[readonly=true]
 {
     background: transparent;
     border: none;
+    width:96%;
+    padding:0 2%; 
 }
 input:focus{
   outline: none;
@@ -41,8 +43,9 @@ input:focus{
 <div class="container">    
 <br>
 <form method="get" action="<%=request.getContextPath()%>/display">
-  <c:if test="${fn:length(selected_listing[0]) gt 0}">
+  
   <h2><strong>Leisure Activities Selected</strong></h2>
+  <c:if test="${fn:length(selected_listing[0]) gt 0}">
   <br>            
   <table class="table table-striped">
     <thead>

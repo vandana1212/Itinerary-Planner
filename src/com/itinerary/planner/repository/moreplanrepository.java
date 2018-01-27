@@ -34,8 +34,7 @@ public class moreplanrepository {
 					listing Listing=new listing();
 					Listing.set_description(result.getString("description"));
 					Listing.set_expense(result.getString("expense"));
-					System.out.println(result.getString("description"));
-					System.out.println(result.getString("expense"));
+					
 					final_list.add(Listing);
 					/*dataList.add(result.getString("description"));
 					dataList.add(result.getString("expense"));*/
@@ -53,8 +52,7 @@ public class moreplanrepository {
 					listing Listing=new listing();
 					Listing.set_description(result1.getString("description"));
 					Listing.set_expense(result1.getString("expense"));
-					System.out.println(result1.getString("description"));
-					System.out.println(result1.getString("expense"));
+					
 					final_list1.add(Listing);
 					/*dataList.add(result.getString("description"));
 					dataList.add(result.getString("expense"));*/
@@ -70,7 +68,7 @@ public class moreplanrepository {
 					listing Listing=new listing();
 					Listing.set_description(result2.getString("description"));
 					Listing.set_expense("");
-					System.out.println(result2.getString("description"));
+					
 					final_list2.add(Listing);
 					/*dataList.add(result.getString("description"));
 					dataList.add(result.getString("expense"));*/

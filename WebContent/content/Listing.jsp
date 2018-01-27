@@ -29,15 +29,12 @@ input[readonly=true]
 {
     background: transparent;
     border: none;
+    width:96%;
+    padding:0 2%; 
 }
-input:focus{
-  outline: none;
-}
-input.break
+input:focus
 {
-word-wrap:break-word;
-word-break:break-all;
-height:80px;
+  outline: none;
 }
 </style>
 </head>
@@ -62,22 +59,22 @@ height:80px;
     	
       <c:forEach items="${listing[0]}" var="listing" varStatus="status">
                     <tr>
-                    	 <td><input type="checkbox" id ="check${status.index}" name="selected" value="<c:out value="${status.index}"/>"></td>
-               			 <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;"><input name="description${status.index}" value="${listing.description}" readonly=true wrap="soft"></td>                 
-                         <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;"><input name="expense${status.index}" value="${listing.expense}" readonly=true wrap="soft"></td>        
+                   	 <td><input type="checkbox" id ="check${status.index}" name="selected" value="<c:out value="${status.index}"/>"></td>
+           			 <td><input name="description${status.index}" value="${listing.description}" readonly=true></td>                 
+                     <td><input name="expense${status.index}" value="${listing.expense}" readonly=true></td>        
        
                     </tr>
                 </c:forEach>
-
     </tbody>
     </table>
     </c:if>
     <c:if test="${!(fn:length(listing[0]) gt 0)}">
      <p>No recommended leisure activities</p>
     </c:if>
-    <c:if test="${fn:length(listing[1]) gt 0}">         
+             
     
-      <h2><strong>Sightseeing Activities Recommended</strong></h2>            
+      <h2><strong>Sightseeing Activities Recommended</strong></h2>   
+      <c:if test="${fn:length(listing[1]) gt 0}">         
   <table class="table table-striped">
     <thead>
       <tr>
@@ -90,7 +87,7 @@ height:80px;
       <c:forEach items="${listing[1]}" var="sightseeing" varStatus="status">
          <tr>
              <td><input type="checkbox" id ="check_sightseeing${status.index}" name="selected_sightseeing" value="<c:out value="${status.index}"/>"></td>
-               <td><input name="sightseeing_description${status.index}" value="${sightseeing.description}" readonly=true></td>                 
+               <td><input name="sightseeing_description${status.index}" value="${sightseeing.description}" readonly=true></td>    
                <td><input name="sightseeing_expense${status.index}" value="${sightseeing.expense}" readonly=true></td>    
          </tr>
      </c:forEach>
@@ -101,8 +98,9 @@ height:80px;
   <c:if test="${!(fn:length(listing[1]) gt 0)}">
      <p>No recommended sightseeing activities</p>
     </c:if>
-   <c:if test="${fn:length(listing[2]) gt 0}">      
-  <h2><strong>Food Recommended</strong></h2>            
+        
+  <h2><strong>Food Recommended</strong></h2>  
+  <c:if test="${fn:length(listing[2]) gt 0}">           
   <table class="table table-striped">
     <thead>
       <tr>
