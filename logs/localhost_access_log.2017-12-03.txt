@@ -1,0 +1,6 @@
+127.0.0.1 - - [03/Dec/2017:23:44:37 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [03/Dec/2017:23:44:38 +0530] "GET /Practicetointegrate/CreateNewaccount.jsp HTTP/1.1" 200 1399
+0:0:0:0:0:0:0:1 - - [03/Dec/2017:23:45:11 +0530] "GET /Practicetointegrate/In.jsp HTTP/1.1" 200 1229
+0:0:0:0:0:0:0:1 - - [03/Dec/2017:23:49:37 +0530] "GET /Practicetointegrate/CreateNewaccount.jsp HTTP/1.1" 200 1520
+0:0:0:0:0:0:0:1 - - [03/Dec/2017:23:50:22 +0530] "GET /Practicetointegrate/CreateNewaccount.jsp HTTP/1.1" 200 1520
+0:0:0:0:0:0:0:1 - - [03/Dec/2017:23:53:39 +0530] "GET /Practicetointegrate/CreateNewaccount.jsp HTTP/1.1" 200 1939
